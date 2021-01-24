@@ -4,9 +4,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "InkKit",
+    name: "MediaWatermark",
     platforms: [
-        .macOS(.v10_10), .iOS(.v9)
+        .iOS(.v9)
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
@@ -24,7 +24,7 @@ let package = Package(
         .target(
             name: "MediaWatermark",
             dependencies: [],
-            path: "./Sources/Classes/**/*"),
+            path: "./Sources/Classes/"),
     ]
 )
 
