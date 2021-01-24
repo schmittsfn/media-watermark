@@ -17,6 +17,8 @@ public enum MediaElementType {
 public class MediaElement {
     public var frame: CGRect = .zero
     public var type: MediaElementType = .image
+    public var blendMode: CGBlendMode = .normal
+    public var alpha: CGFloat = 1.0
     
     public private(set) var contentImage: UIImage! = nil
     public private(set) var contentView: UIView! = nil
